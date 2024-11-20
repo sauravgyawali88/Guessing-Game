@@ -7,7 +7,7 @@ class Program
     {
         // Step 1: Generate a random number between 1 and 100
         Random rand = new Random();
-        int hiddenNumber = rand.Next(1, 101); // Generates a random number
+        int hiddenNumber = rand.Next(1, 101); // Generates a random number 
 
         // Step 2: Create a list to store all guesses
         List<Guess> guesses = new List<Guess>();
@@ -22,7 +22,7 @@ class Program
             Console.Write("Enter your guess (1-100): ");
             string input = Console.ReadLine();
             
-            // Step 5: Validate user input and try to parse it as an integer
+            // Step 5: Validate user input and try to parse it as an integers
             if (int.TryParse(input, out userGuess))
             {
                 // Check if the guess is within the valid range
